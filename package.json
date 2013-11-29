@@ -1,0 +1,72 @@
+{
+  "name": "grunt-bower-requirejs",
+  "version": "0.8.0",
+  "description": "Automagically wire-up installed Bower components into your RequireJS config",
+  "keywords": [
+    "gruntplugin",
+    "bower",
+    "requirejs",
+    "rjs",
+    "config",
+    "wire",
+    "install",
+    "component",
+    "package",
+    "module"
+  ],
+  "homepage": "https://github.com/yeoman/grunt-bower-requirejs",
+  "bugs": "https://github.com/yeoman/grunt-bower-requirejs/issues",
+  "license": "BSD",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "maintainers": [
+    {
+      "name": "Rob Dodson",
+      "email": "lets.email.rob@gmail.com",
+      "url": "http://robdodson.me"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Merrick Christensen",
+      "email": "merrick.christensen@gmail.com",
+      "url": "http://merrickchristensen.com"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yeoman/grunt-bower-requirejs.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "bower-requirejs": "~0.8.2"
+  },
+  "devDependencies": {
+    "matchdep": "~0.1.1",
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "bower": "~1.x",
+    "durable-json-lint": "0.0.1",
+    "grunt-simple-mocha": "~0.4.0",
+    "should": "~2.1.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0",
+    "bower": "~1.x"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "files": [
+    "tasks/bower-requirejs.js"
+  ]
+}
