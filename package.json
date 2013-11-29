@@ -9,38 +9,19 @@
     "rjs",
     "config",
     "wire",
+    "inject",
     "install",
     "component",
     "package",
     "module"
   ],
-  "homepage": "https://github.com/yeoman/grunt-bower-requirejs",
-  "bugs": "https://github.com/yeoman/grunt-bower-requirejs/issues",
   "license": "BSD",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "name": "Rob Dodson",
+    "email": "lets.email.rob@gmail.com",
+    "url": "http://robdodson.me"
   },
-  "maintainers": [
-    {
-      "name": "Rob Dodson",
-      "email": "lets.email.rob@gmail.com",
-      "url": "http://robdodson.me"
-    }
-  ],
-  "contributors": [
-    {
-      "name": "Merrick Christensen",
-      "email": "merrick.christensen@gmail.com",
-      "url": "http://merrickchristensen.com"
-    }
-  ],
-  "main": "Gruntfile.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/yeoman/grunt-bower-requirejs.git"
-  },
+  "repository": "yeoman/grunt-bower-requirejs",
   "scripts": {
     "test": "grunt test"
   },
