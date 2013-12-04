@@ -64,6 +64,17 @@ Type: `Array`
 
 Specify components to be excluded from being added to the RequireJS config.
 
+```js
+bower: {
+  all: {
+    rjsConfig: '<%= yeoman.app %>/scripts/main.js',
+    options: {
+      exclude: ['modernizr', 'sass-bootstrap', 'qtip2']
+    }
+  }
+}
+```
+
 #### baseUrl
 
 Default: `null`  
@@ -71,6 +82,16 @@ Type: `String`
 
 Generate paths relative to a specific directory. This option is for anyone **not** using `data-main` who wishes to set their own base.
 
+```js
+bower: {
+  all: {
+    rjsConfig: '<%= yeoman.app %>/path/to/main.js',
+    options: {
+      baseUrl: './'
+    }
+  }
+}
+```
 
 ## Things to remember
 
