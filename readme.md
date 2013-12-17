@@ -1,4 +1,4 @@
-# grunt-bower-requirejs [![Build Status](https://secure.travis-ci.org/yeoman/grunt-bower-requirejs.png?branch=master)](http://travis-ci.org/yeoman/grunt-bower-requirejs)
+# grunt-bower-requirejs [![Build Status](https://secure.travis-ci.org/yeoman/grunt-bower-requirejs.png?branch=master)](http://travis-ci.org/yeoman/grunt-bower-requirejs) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 > Automagically wire-up installed Bower components into your RequireJS config
 
