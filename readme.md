@@ -99,27 +99,27 @@ bower: {
 
 ### Config file
 
-You need to already have a config.js file at the location specified by `rjsConfig`. At a minimum, the file should look like this:
+If you do not already have a `config.js` file at the location specified by the `--config` option then one will be generated for you. A basic `config.js` file looks like this:
 
 ``` js
 requirejs.config({
-  baseUrl: './',
+  shim: {},
   paths: {}
 });
 ```
 
-You still need to create a path for *your* js files. The grunt task will only create paths for third party libraries specified in `bower.json`.
+You still need to create a path for *your* js files. This tool will only create paths for third party libraries specified in `bower.json`.
 
 ``` js
 requirejs.config({
-  baseUrl: './',
+  shim: {},
   paths: {
-    myComponent: 'js/myComponent.js'
+    myComponent: 'js/myComponent.js'  // make sure to add your components!
   }
 });
 ```
 
-The task does not overwrite the config file, it just adds additional paths to it. So paths you add will be preserved. Keep in mind that if you change or remove one of your bower dependencies after you've run the task, that path will still exist in the config file and you'll need to manually remove it.
+The tool does not overwrite the config file, it just adds additional paths to it. So paths you add will be preserved. Keep in mind that if you change or remove one of your Bower dependencies after you've run the task, that path will still exist in the config file and you'll need to manually remove it.
 
 ### RequireJS component
 
