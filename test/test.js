@@ -49,4 +49,12 @@ describe('index', function () {
       actual.should.eql(expected);
     });
   });
+
+  describe('generated-config', function () {
+    it('should return the expected result', function () {
+      var actual = jsonify(fs.readFileSync('tmp/generated-config.js', 'utf-8'));
+      var expected = jsonify(fs.readFileSync('test/fixtures/generated-config-expected.js', 'utf-8'));
+      actual.should.eql(expected);
+    });
+  });
 });

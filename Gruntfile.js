@@ -53,6 +53,9 @@ module.exports = function (grunt) {
           baseUrl: './'
         },
         rjsConfig: 'tmp/baseurl.js'
+      },
+      generated: {
+        rjsConfig: 'tmp/generated-config.js'
       }
     }
   });
