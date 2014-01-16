@@ -10,6 +10,6 @@ module.exports = function (grunt) {
       baseUrl: ''
     });
 
-    bowerRequireJS({}, options, cb);
+    bowerRequireJS(options, cb);
   });
 };
