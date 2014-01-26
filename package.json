@@ -26,7 +26,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "bower-requirejs": "~0.9.0"
+    "bower-requirejs": "~0.9.1"
   },
   "devDependencies": {
     "matchdep": "~0.1.1",
