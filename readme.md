@@ -95,6 +95,18 @@ bower: {
 }
 ```
 
+## Using Bower Hooks
+
+Bower >=v1.3.1 includes [hooks](https://github.com/bower/bower/blob/master/HOOKS.md) for `preinstall`, `postinstall` and `preuninstall` actions. To run grunt-bower-requirejs after every bower install, add a `scripts` block to your `.bowerrc`.
+
+```
+{
+  "scripts": {
+    "postinstall": "grunt bower"
+  }
+}
+```
+
 ## Things to remember
 
 ### Config file
