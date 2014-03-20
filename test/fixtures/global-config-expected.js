@@ -8,6 +8,7 @@ var require = {
     anima: '../bower_components/anima/anima',
     'backbone-amd': '../bower_components/backbone-amd/backbone',
     backbone: '../bower_components/backbone/backbone',
+    'backbone.marionette': '../bower_components/backbone.marionette/lib/core/amd/backbone.marionette',
     'jquery-ui-touch-punch-amd': '../bower_components/jquery-ui-touch-punch-amd/jquery.ui.touch-punch',
     jquery: '../bower_components/jquery/jquery',
     json2: '../bower_components/json2/json2',

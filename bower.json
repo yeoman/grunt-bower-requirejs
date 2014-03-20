@@ -14,6 +14,7 @@
     "handlebars": "~1.0.0",
     "backbone": "~1.0.0",
     "backbone-amd": "~1.0.0",
+    "backbone.marionette": "~1.6.2",
     "konamicode.js": "*",
     "mout": "~0.7.1"
   },

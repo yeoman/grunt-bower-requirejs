@@ -52,10 +52,16 @@ module.exports = function (grunt) {
         options: {
           baseUrl: './'
         },
-        rjsConfig: 'tmp/baseurl.js'
+        rjsConfig: 'tmp/baseurl-config.js'
       },
       generated: {
         rjsConfig: 'tmp/generated-config.js'
+      },
+      transitive: {
+        options: {
+          transitive: true
+        },
+        rjsConfig: 'tmp/transitive-config.js'
       }
     }
   });

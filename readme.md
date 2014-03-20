@@ -95,6 +95,28 @@ bower: {
 }
 ```
 
+#### transitive
+
+Default: `false`  
+Type: `Boolean`
+
+If the transitive option is set to `true`, then transitive dependencies will be also added to the require config.
+
+For example, say we explicitly have an entry in our bower config for module `myTotallyCoolModule`, which depends on `jQuery` and `underscore`. If the transitive option is set to `true`, there will be config entries for `myTotallyCoolModule`, `jQuery`, and `underscore`. Otherwise, if the transitive option is set to `false`, there will only be a config entry for `myTotallyCoolModule`.
+
+Each transitive dependency is only included once, even if the dependency is used multiple times.
+
+```js
+bower: {
+  all: {
+    rjsConfig: '<%= yeoman.app %>/scripts/main.js',
+    options: {
+      transitive: true
+    }
+  }
+}
+```
+
 ## Using Bower Hooks
 
 Bower >=v1.3.1 includes [hooks](https://github.com/bower/bower/blob/master/HOOKS.md) for `preinstall`, `postinstall` and `preuninstall` actions. To run grunt-bower-requirejs after every bower install, add a `scripts` block to your `.bowerrc`.

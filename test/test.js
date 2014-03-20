@@ -34,9 +34,9 @@ describe('index', function () {
     });
   });
 
-  describe('baseurl', function () {
+  describe('baseurl-config', function () {
     it('should return the expected result', function () {
-      var actual = jsonify(fs.readFileSync('tmp/baseurl.js', 'utf-8'));
+      var actual = jsonify(fs.readFileSync('tmp/baseurl-config.js', 'utf-8'));
       var expected = jsonify(fs.readFileSync('test/fixtures/baseurl-expected.js', 'utf-8'));
       actual.should.eql(expected);
     });
@@ -54,6 +54,14 @@ describe('index', function () {
     it('should return the expected result', function () {
       var actual = jsonify(fs.readFileSync('tmp/generated-config.js', 'utf-8'));
       var expected = jsonify(fs.readFileSync('test/fixtures/generated-config-expected.js', 'utf-8'));
+      actual.should.eql(expected);
+    });
+  });
+
+  describe('transitive-config', function () {
+    it('should return the expected result', function () {
+      var actual = jsonify(fs.readFileSync('tmp/transitive-config.js', 'utf-8'));
+      var expected = jsonify(fs.readFileSync('test/fixtures/transitive-expected.js', 'utf-8'));
       actual.should.eql(expected);
     });
   });

@@ -7,7 +7,8 @@ module.exports = function (grunt) {
     var options = this.options({
       config: this.data.rjsConfig,
       exclude: [],
-      baseUrl: ''
+      baseUrl: '',
+      transitive: false
     });
 
     bowerRequireJS(options, cb);
