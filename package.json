@@ -26,23 +26,23 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "bower-requirejs": "~0.10.3"
+    "bower-requirejs": "^0.10.3"
   },
   "devDependencies": {
-    "matchdep": "~0.1.1",
-    "grunt": "~0.4.0",
-    "grunt-contrib-jshint": "~0.6.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.0",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "bower": "~1.x",
-    "durable-json-lint": "0.0.1",
-    "grunt-simple-mocha": "~0.4.0",
-    "should": "~2.1.0"
+    "bower": "^1.x",
+    "durable-json-lint": "^0.0.1",
+    "grunt": "^0.4.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-simple-mocha": "^0.4.0",
+    "load-grunt-tasks": "^0.4.0",
+    "should": "^3.3.1"
   },
   "peerDependencies": {
-    "grunt": "~0.4.0",
-    "bower": "~1.x"
+    "grunt": "^0.4.0",
+    "bower": "^1.x"
   },
   "engines": {
     "node": ">=0.10.0"
