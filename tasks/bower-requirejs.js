@@ -7,7 +7,8 @@ module.exports = function (grunt) {
       config: this.data.rjsConfig,
       exclude: [],
       baseUrl: '',
-      transitive: false
+      transitive: false,
+      'exclude-dev': false
     }), this.async());
   });
 };

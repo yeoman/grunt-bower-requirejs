@@ -62,6 +62,12 @@ module.exports = function (grunt) {
           transitive: true
         },
         rjsConfig: 'tmp/transitive-config.js'
+      },
+      'exclude-dev': {
+        options: {
+          'exclude-dev': true
+        },
+        rjsConfig: 'tmp/exclude-dev-config.js'
       }
     }
   });

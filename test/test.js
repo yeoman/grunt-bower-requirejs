@@ -65,4 +65,11 @@ describe('index', function () {
       actual.should.eql(expected);
     });
   });
+  describe('exclude-dev-config', function () {
+    it('should return the expected result', function () {
+      var actual = jsonify(fs.readFileSync('tmp/exclude-dev-config.js', 'utf-8'));
+      var expected = jsonify(fs.readFileSync('test/fixtures/exclude-dev-excpected.js', 'utf-8'));
+      actual.should.eql(expected);
+    });
+  });
 });
