@@ -65,7 +65,7 @@ module.exports = function (grunt) {
       },
       'exclude-dev': {
         options: {
-          'exclude-dev': true
+          'excludeDev': true
         },
         rjsConfig: 'tmp/exclude-dev-config.js'
       }

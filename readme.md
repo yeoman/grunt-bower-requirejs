@@ -117,12 +117,12 @@ bower: {
 }
 ```
 
-#### exclude-dev
+#### excludeDev
 
 Default: `false`
 Type: `Boolean`
 
-If the exclude-dev option is set to `true`, then de dev-pendencies won't be added to the require config.
+If the excludeDev option is set to `true`, then dev-pendencies won't be added to the require config.
 
 ```js
 bower: {
