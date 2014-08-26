@@ -9,7 +9,6 @@
     "respond": "~1.2.0",
     "anima": "~0.3.2",
     "typeahead.js": "~0.9.3",
-    "json2": "*",
     "jquery-ui-touch-punch-amd": "0.1.0",
     "handlebars": "~1.0.0",
     "backbone": "~1.0.0",
@@ -18,6 +17,9 @@
     "konamicode.js": "*",
     "mout": "~0.7.1",
     "node-module-type-stub": "*"
+  },
+  "devDependencies": {
+    "json2": "*"
   },
   "resolutions": {
     "jquery": "~1.10.0"

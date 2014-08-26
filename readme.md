@@ -117,6 +117,24 @@ bower: {
 }
 ```
 
+#### excludeDev
+
+Default: `false`
+Type: `Boolean`
+
+If the excludeDev option is set to `true`, then dev-pendencies won't be added to the require config.
+
+```js
+bower: {
+  all: {
+    rjsConfig: '<%= yeoman.app %>/scripts/main.js',
+    options: {
+      'exclude-dev': true
+    }
+  }
+}
+```
+
 ## Using Bower Hooks
 
 Bower >=v1.3.1 includes [hooks](https://github.com/bower/bower/blob/master/HOOKS.md) for `preinstall`, `postinstall` and `preuninstall` actions. To run grunt-bower-requirejs after every bower install, add a `scripts` block to your `.bowerrc`.
