@@ -41,7 +41,7 @@
     "should": "^4.0.4"
   },
   "peerDependencies": {
-    "grunt": "^0.4.0",
+    "grunt": ">=0.4.0",
     "bower": "^1.x"
   },
   "engines": {
