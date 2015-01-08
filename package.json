@@ -26,7 +26,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "bower-requirejs": "^1.0.0"
+    "bower-requirejs": "^1.0.0",
+    "load-grunt-tasks": "^2.0.0"
   },
   "devDependencies": {
     "bower": "^1.x",
@@ -37,7 +38,6 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-nodeunit": "^0.4.1",
     "grunt-simple-mocha": "^0.4.0",
-    "load-grunt-tasks": "^0.6.0",
     "should": "^4.0.4"
   },
   "peerDependencies": {

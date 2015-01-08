@@ -67,7 +67,7 @@ Type: `Array`
 Specify components to be excluded from being added to the RequireJS config.
 
 ```js
-bower: {
+bowerRequirejs: {
   all: {
     rjsConfig: '<%= yeoman.app %>/scripts/main.js',
     options: {
@@ -85,7 +85,7 @@ Type: `String`
 Generate paths relative to a specific directory. This option is for anyone **not** using `data-main` who wishes to set their own base.
 
 ```js
-bower: {
+bowerRequirejs: {
   all: {
     rjsConfig: '<%= yeoman.app %>/path/to/main.js',
     options: {
@@ -107,7 +107,7 @@ For example, say we explicitly have an entry in our bower config for module `myT
 Each transitive dependency is only included once, even if the dependency is used multiple times.
 
 ```js
-bower: {
+bowerRequirejs: {
   all: {
     rjsConfig: '<%= yeoman.app %>/scripts/main.js',
     options: {
@@ -125,7 +125,7 @@ Type: `Boolean`
 If the excludeDev option is set to `true`, then dev-pendencies won't be added to the require config.
 
 ```js
-bower: {
+bowerRequirejs: {
   all: {
     rjsConfig: '<%= yeoman.app %>/scripts/main.js',
     options: {
