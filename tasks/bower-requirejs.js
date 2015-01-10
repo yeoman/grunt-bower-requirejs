@@ -2,9 +2,6 @@
 var bowerRequireJS = require('bower-requirejs');
 var loadGruntTasks = require('load-grunt-tasks');
 
-/**
- * Task
- */
 function task() {
   var options = this.options({
     config: this.data.rjsConfig,
@@ -31,5 +28,5 @@ module.exports = function (grunt) {
     });
   }
 
-  grunt.registerMultiTask('bowerRequirejs', 'Wire-up Bower components in RJS config',task);
+  grunt.registerMultiTask('bowerRequirejs', 'Wire-up Bower components in RJS config', task);
 };

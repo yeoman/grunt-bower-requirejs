@@ -44,11 +44,14 @@ module.exports = function (grunt) {
       standard: {
         rjsConfig: 'tmp/config.js'
       },
+      // this one should run inside the mocked bower task
       mocktask1: {
-        exclude: [/* this one should run inside the mocked bower task */]
+        exclude: []
       },
+      // this one should run inside the mocked bower
+      // task after loading the bower-requirejs task again
       mocktask2: {
-        exclude: [/* this one should run inside the mocked bower task after loading the bower-requirejs task again */]
+        exclude: []
       }
     },
     bowerRequirejs: {
@@ -111,10 +114,10 @@ module.exports = function (grunt) {
   });
 
   // mock conflicting bower task
-  grunt.registerTask('mock-bower-task', function() {
+  grunt.registerTask('mock-bower-task', function () {
     // register mock task
     grunt.registerMultiTask('bower', 'mocked conflicting task', function () {
-      fs.writeFileSync('tmp/' + this.target,'Rename completed')
+      fs.writeFileSync('tmp/' + this.target,'Rename completed');
     });
 
     grunt.task.run(['bower:mocktask1']);
@@ -124,8 +127,6 @@ module.exports = function (grunt) {
 
     grunt.task.run(['bower:mocktask2']);
   });
-
-
 
   grunt.registerTask('test', [
     'clean',
