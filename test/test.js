@@ -2,6 +2,7 @@
 'use strict';
 var fs = require('fs');
 var durableJsonLint = require('durable-json-lint');
+require('should');
 
 // extract the config object as a string from the actual and expected files.
 // then turn the string into json so we can deeply compare the objects.
