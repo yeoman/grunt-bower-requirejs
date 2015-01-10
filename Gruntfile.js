@@ -1,4 +1,6 @@
 'use strict';
+var fs = require('fs');
+
 module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
@@ -41,6 +43,17 @@ module.exports = function (grunt) {
       },
       standard: {
         rjsConfig: 'tmp/config.js'
+      },
+      mocktask1: {
+        exclude: [/* this one should run inside the mocked bower task */]
+      },
+      mocktask2: {
+        exclude: [/* this one should run inside the mocked bower task after loading the bower-requirejs task again */]
+      }
+    },
+    bowerRequirejs: {
+      options: {
+        exclude: ['underscore']
       },
       pathless: {
         rjsConfig: 'tmp/pathless-config.js'
@@ -97,12 +110,31 @@ module.exports = function (grunt) {
     });
   });
 
+  // mock conflicting bower task
+  grunt.registerTask('mock-bower-task', function() {
+    // register mock task
+    grunt.registerMultiTask('bower', 'mocked conflicting task', function () {
+      fs.writeFileSync('tmp/' + this.target,'Rename completed')
+    });
+
+    grunt.task.run(['bower:mocktask1']);
+
+    // load tasks again -> bower task should still be the mocked one
+    grunt.loadTasks('tasks');
+
+    grunt.task.run(['bower:mocktask2']);
+  });
+
+
+
   grunt.registerTask('test', [
     'clean',
     'mkdir:tmp',
     'copy',
     'bower-install',
-    'bower',
+    'bower:standard',
+    'bowerRequirejs',
+    'mock-bower-task',
     'simplemocha',
     'clean'
   ]);

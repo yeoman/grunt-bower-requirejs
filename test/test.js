@@ -72,4 +72,13 @@ describe('index', function () {
       actual.should.eql(expected);
     });
   });
+  describe('rename-test', function () {
+    it('should not register bower task if there is a conflicting one', function () {
+      var mocktask1 = fs.readFileSync('tmp/mocktask1', 'utf-8');
+      var mocktask2 = fs.readFileSync('tmp/mocktask2', 'utf-8');
+      var expected = 'Rename completed';
+      mocktask1.should.eql(expected);
+      mocktask2.should.eql(expected);
+    });
+  });
 });
