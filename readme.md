@@ -27,7 +27,7 @@ grunt.loadNpmTasks('grunt-bower-requirejs');
 
 ```js
 grunt.initConfig({
-  bower: {
+  bowerRequirejs: {
     target: {
       rjsConfig: 'app/config.js'
     }
