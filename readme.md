@@ -36,15 +36,15 @@ grunt.initConfig({
 
 grunt.loadNpmTasks('grunt-bower-requirejs');
 
-grunt.registerTask('default', ['bower']);
+grunt.registerTask('default', ['bowerRequirejs']);
 ```
 
 
 ## Documentation
 
-When the `bower` task is run it merges the paths of installed Bower components into the `paths` property of your RequireJS config.
+When the `bowerRequirejs` task is run it merges the paths of installed Bower components into the `paths` property of your RequireJS config.
 
-You trigger this task from another task in your Gruntfile or through the CLI: `grunt bower`
+You trigger this task from another task in your Gruntfile or through the CLI: `grunt bowerRequirejs`
 
 
 ### rjsConfig
@@ -142,7 +142,7 @@ Bower >=v1.3.1 includes [hooks](https://github.com/bower/bower/blob/master/HOOKS
 ```
 {
   "scripts": {
-    "postinstall": "grunt bower"
+    "postinstall": "grunt bowerRequirejs"
   }
 }
 ```
