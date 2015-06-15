@@ -15,7 +15,7 @@
     "package",
     "module"
   ],
-  "license": "BSD",
+  "license": "BSD-2-Clause",
   "author": {
     "name": "Rob Dodson",
     "email": "lets.email.rob@gmail.com",
