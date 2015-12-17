@@ -129,7 +129,7 @@ bowerRequirejs: {
   all: {
     rjsConfig: '<%= yeoman.app %>/scripts/main.js',
     options: {
-      'exclude-dev': true
+      excludeDev: true
     }
   }
 }
