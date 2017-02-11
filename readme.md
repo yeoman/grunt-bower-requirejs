@@ -1,5 +1,7 @@
 # grunt-bower-requirejs [![Build Status](https://secure.travis-ci.org/yeoman/grunt-bower-requirejs.svg?branch=master)](http://travis-ci.org/yeoman/grunt-bower-requirejs)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/yeoman/grunt-bower-requirejs.svg)](https://greenkeeper.io/)
+
 > Automagically wire-up installed Bower components into your RequireJS config
 
 Grunt wrapper for the [bower-requirejs](https://github.com/yeoman/bower-requirejs) module.
